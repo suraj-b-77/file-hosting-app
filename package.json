@@ -1,0 +1,33 @@
+{
+  "name": "file-hosting-app",
+  "version": "1.0.0",
+  "description": "Dark mode file hosting website with MongoDB and basic auth",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "file-hosting",
+    "express",
+    "ejs",
+    "mongodb",
+    "dark-mode"
+  ],
+  "author": "suraj-b-77",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.0.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.16"
+  }
+}

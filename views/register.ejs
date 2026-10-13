@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FileHost | Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="brand-block">
+          <div class="logo">F</div>
+          <h1>FileHost</h1>
+          <p>Secure file sharing in a clean dark interface.</p>
+        </div>
+
+        <form action="/login" method="POST" class="auth-form">
+          <h2>Welcome back</h2>
+
+          <% if (error) { %>
+            <div class="alert error"><%= error %></div>
+          <% } %>
+
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="••••••••" required />
+          </div>
+
+          <button type="submit" class="primary-btn">Login</button>
+        </form>
+
+        <p class="switch-link">
+          Need an account?
+          <a href="/register">Create one</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
